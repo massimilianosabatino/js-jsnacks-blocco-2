@@ -4,15 +4,22 @@
 //Creo array nomi e cognomi
 const nomi = ['mario', 'marco', 'andrea', 'filippo', 'luca'];
 const cognomi = ['altobelli', 'rossi', 'volvera', 'picasso', 'tippete'];
+const fakeList = [];
 
 //variabili di servizio
-let nomeCognome;
-let nomeRandom = '';
-let numeroRandom;
+let nomeRandom;
+let cognomeRandom;
+let numeroNomeRandom;
+let numeroCognomeRandom;
 //ciclo per generare false identità
 
-for (let i = 0; i < 4; i++) {
-    numeroRandom = Math.floor(Math.random() * nomi.length);
-    nomeRandom = nomi[numeroRandom];
-    console.log(nomeRandom);
+
+for (let i = 0; i < 3; i++) {
+    numeroNomeRandom = Math.floor(Math.random() * nomi.length);
+    numeroCognomeRandom = Math.floor(Math.random() * nomi.length);
+    nomeRandom = nomi[numeroNomeRandom];
+    cognomeRandom = cognomi[numeroCognomeRandom];
+    fakeList.push(`${nomeRandom} ${cognomeRandom}`);
 }
+
+console.log(fakeList);
