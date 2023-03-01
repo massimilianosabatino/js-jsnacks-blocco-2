@@ -17,11 +17,11 @@ let sumNumber = 0;
 // console.log(sumNumber);
 
 //Ciclo WHILE
-let conunt = 0;
-while (conunt < 5) {
+let count = 0;
+while (count < 5) {
     userNumber = Number(prompt('Inserisci un numero da sommare'));
     sumNumber += userNumber;
-    conunt++;
+    count++;
 }
 
 console.log(sumNumber);
