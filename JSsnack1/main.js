@@ -1,0 +1,17 @@
+'use strict';
+
+// Il software deve chiedere per 5 volte all’utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+// Esegui questo programma in due versioni, con il for e con il while.
+
+let userNumber  = 0;
+let sumNumber = 0;
+
+//Ciclo FOR
+for (let i = 0; i < 5; i++) {
+    userNumber = Number(prompt('Inserisci un numero da sommare'));
+    sumNumber += userNumber;
+    
+}
+
+console.log(sumNumber);
