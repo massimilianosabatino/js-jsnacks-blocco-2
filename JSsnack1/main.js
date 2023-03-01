@@ -20,8 +20,14 @@ let sumNumber = 0;
 let count = 0;
 while (count < 5) {
     userNumber = Number(prompt('Inserisci un numero da sommare'));
-    sumNumber += userNumber;
-    count++;
+    // sumNumber += userNumber;
+    // count++;
+
+    //Condizione per verifica se inserito è numero
+    if (!isNaN(userNumber)) {
+        sumNumber += userNumber;
+        count++;
+    }
 }
 
 console.log(sumNumber);
