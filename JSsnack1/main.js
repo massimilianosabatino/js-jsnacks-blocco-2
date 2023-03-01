@@ -8,10 +8,20 @@ let userNumber  = 0;
 let sumNumber = 0;
 
 //Ciclo FOR
-for (let i = 0; i < 5; i++) {
+// for (let i = 0; i < 5; i++) {
+//     userNumber = Number(prompt('Inserisci un numero da sommare'));
+//     sumNumber += userNumber;
+    
+// }
+
+// console.log(sumNumber);
+
+//Ciclo WHILE
+let conunt = 0;
+while (conunt < 5) {
     userNumber = Number(prompt('Inserisci un numero da sommare'));
     sumNumber += userNumber;
-    
+    conunt++;
 }
 
 console.log(sumNumber);
